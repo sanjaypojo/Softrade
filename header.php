@@ -27,14 +27,10 @@
 <!-- Scalable Vector Icons from Font Awesome -->
 <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
-<!-- FONTS --><!-- TODO: Is this the best way to do this? --> 
-<link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Mako:400,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:300' rel='stylesheet' type='text/css'>
-<script src="http://use.edgefonts.net/aguafina-script:n4.js"></script>
+<!-- FONTS -->
+<link href='<?php echo get_template_directory_uri();?>/resources/fonts/fontDefinitions.css' rel='stylesheet' type='text/css'>
 
-<title><?php wp_title( '|', true, 'right' ); ?></title>
+<title><?php echo bloginfo('name'); wp_title( '|'); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
